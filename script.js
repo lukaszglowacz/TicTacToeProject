@@ -53,9 +53,9 @@ if (roundWon) {
     return;
 }
 
-let round = !gameState.includes("");
-    if (round) {
-        statusDisplay.innerHTML = Message();
+let roundDraw = !gameState.includes("");
+    if (roundDraw) {
+        statusDisplay.innerHTML = drawMessage();
         gameActive = false;
         return;
     }
