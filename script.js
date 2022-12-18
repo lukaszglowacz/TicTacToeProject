@@ -59,6 +59,7 @@ let roundDraw = !gameState.includes("");
         gameActive = false;
         return;
     }
+
     handlePlayerChange();
 }
 
