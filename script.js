@@ -5,7 +5,7 @@ let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
 const winningMessage = () => `Player ${currentPlayer} has won!`;
-const drawMessage = () => `Game ended in a draw!`;
+const Message = () => `Game ended in a draw!`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
@@ -53,6 +53,12 @@ if (roundWon) {
     return;
 }
 
+let round = !gameState.includes("");
+    if (round) {
+        statusDisplay.innerHTML = Message();
+        gameActive = false;
+        return;
+    }
     handlePlayerChange();
 }
 
