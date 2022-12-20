@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 body {
-    font-family: 'Hepta Slab', serif
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
 }
+
+h1 {
+    font-size: 4rem;
+}
+
 section {
     text-align: center;
 }
@@ -13,7 +19,8 @@ section {
     margin: 50px auto;
 }
 .cell {
-    font-family: "Arial", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     width: 100px;
     height: 100px;
     box-shadow: 0 0 0 1px #333333;
@@ -24,14 +31,15 @@ section {
 }
 .game--restart {
     cursor: pointer;
-    background-color: green; /* Green */
+    background-color: rgba(104,2,137,1); /* Green */
     border: none;
-    color: white;
+    color: #e5e5e5;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
   }
 
 .game--restart:hover {
